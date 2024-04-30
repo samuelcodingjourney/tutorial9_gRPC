@@ -17,8 +17,8 @@ service ChatService {
     rpc Chat(stream ChatMessage) returns (stream ChatMessage);
 }
 
-message PaymentReqeuest {
-    string user_ud = 1;
+message PaymentRequest {
+    string user_id = 1;
     double amount = 2;
 }
 
